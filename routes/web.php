@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Controller0187;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/buku0187', [Controller0187::class,'buku']);
+Route::get('/buku0187', [Controller0187::class,'kategori']);
+Route::get('/buku0187', [Controller0187::class,'kategoribuku']);
